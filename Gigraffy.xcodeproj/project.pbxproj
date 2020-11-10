@@ -13,6 +13,8 @@
 		A19DA8AE2555EDE6003D9EDB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A19DA8AD2555EDE6003D9EDB /* Preview Assets.xcassets */; };
 		A19DA8B92555EDE7003D9EDB /* GigraffyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19DA8B82555EDE7003D9EDB /* GigraffyTests.swift */; };
 		A19DA8C42555EDE7003D9EDB /* GigraffyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19DA8C32555EDE7003D9EDB /* GigraffyUITests.swift */; };
+		A19DA8D22555EF10003D9EDB /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19DA8D12555EF10003D9EDB /* BarChartView.swift */; };
+		A19DA8D4255A5A65003D9EDB /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19DA8D3255A5A65003D9EDB /* ChartData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		A19DA8BF2555EDE7003D9EDB /* GigraffyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GigraffyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A19DA8C32555EDE7003D9EDB /* GigraffyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GigraffyUITests.swift; sourceTree = "<group>"; };
 		A19DA8C52555EDE7003D9EDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A19DA8D12555EF10003D9EDB /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
+		A19DA8D3255A5A65003D9EDB /* ChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +101,11 @@
 			children = (
 				A19DA8A62555EDE4003D9EDB /* GigraffyApp.swift */,
 				A19DA8A82555EDE4003D9EDB /* ContentView.swift */,
+				A19DA8D12555EF10003D9EDB /* BarChartView.swift */,
 				A19DA8AA2555EDE6003D9EDB /* Assets.xcassets */,
 				A19DA8AF2555EDE6003D9EDB /* Info.plist */,
 				A19DA8AC2555EDE6003D9EDB /* Preview Content */,
+				A19DA8D3255A5A65003D9EDB /* ChartData.swift */,
 			);
 			path = Gigraffy;
 			sourceTree = "<group>";
@@ -261,6 +267,8 @@
 			files = (
 				A19DA8A92555EDE4003D9EDB /* ContentView.swift in Sources */,
 				A19DA8A72555EDE4003D9EDB /* GigraffyApp.swift in Sources */,
+				A19DA8D4255A5A65003D9EDB /* ChartData.swift in Sources */,
+				A19DA8D22555EF10003D9EDB /* BarChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
