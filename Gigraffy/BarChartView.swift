@@ -9,6 +9,7 @@ import SwiftUI
 
 struct BarChartView: View {
     
+    @StateObject var chartViewModel: ChartViewModel
     @State var pickerSelectedItem = 2
     
     var body: some View {
@@ -29,18 +30,14 @@ struct BarChartView: View {
                     Text("Year").tag(4)
                 }
                 .pickerStyle(SegmentedPickerStyle())
-      
-                // Bar
-                HStack {
-                    SingleBarView(dayOfWeek: "Mon", stepsInADay: (1000/100))
-                    SingleBarView(dayOfWeek: "Tue", stepsInADay: (15000/100))
-                    SingleBarView(dayOfWeek: "Wed", stepsInADay: (20000/100))
-                    SingleBarView(dayOfWeek: "Thu", stepsInADay: (1200/100))
-                    SingleBarView(dayOfWeek: "Fri", stepsInADay: (8700/100))
-                    SingleBarView(dayOfWeek: "Sat", stepsInADay: (20000/100))
-                    SingleBarView(dayOfWeek: "Sun", stepsInADay: (12000/100))
-                }
                 
+                // Draw Bars
+                HStack {
+                    ForEach(chartViewModel.chartData) { data in
+                        SingleBarView(xLabel: data.xLabel, value: chartViewModel.ratio(value: data.value))
+                    }
+                }
+                .animation(.easeIn)
             }
         }
     }
@@ -48,23 +45,24 @@ struct BarChartView: View {
 
 struct BarChartView_Previews: PreviewProvider {
     static var previews: some View {
-        BarChartView()
+        BarChartView(chartViewModel: ChartViewModel())
     }
 }
 
 struct SingleBarView: View {
     
-    var dayOfWeek: String
-    var stepsInADay: CGFloat
-
+    var xLabel: String
+    var value: CGFloat
+    
     var body: some View {
         VStack{
             ZStack (alignment: .bottom) {
                 Capsule().frame(width: 30, height: 200)
-                Capsule().frame(width: 30, height: stepsInADay)
+                    .foregroundColor(Color(#colorLiteral(red: 0.08063012573, green: 0.2434819372, blue: 0.3373489538, alpha: 0.5205211901)))
+                Capsule().frame(width: 30, height: 200 * value)
                     .foregroundColor(.white)
             }
-            Text(dayOfWeek)
+            Text(xLabel)
                 .foregroundColor(.white)
         }
     }

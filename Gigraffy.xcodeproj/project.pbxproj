@@ -14,7 +14,8 @@
 		A19DA8B92555EDE7003D9EDB /* GigraffyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19DA8B82555EDE7003D9EDB /* GigraffyTests.swift */; };
 		A19DA8C42555EDE7003D9EDB /* GigraffyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19DA8C32555EDE7003D9EDB /* GigraffyUITests.swift */; };
 		A19DA8D22555EF10003D9EDB /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19DA8D12555EF10003D9EDB /* BarChartView.swift */; };
-		A19DA8D4255A5A65003D9EDB /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19DA8D3255A5A65003D9EDB /* ChartData.swift */; };
+		A19DA8D4255A5A65003D9EDB /* ChartDataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19DA8D3255A5A65003D9EDB /* ChartDataPoint.swift */; };
+		A19DA8D6255B0F50003D9EDB /* ChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19DA8D5255B0F50003D9EDB /* ChartViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +49,8 @@
 		A19DA8C32555EDE7003D9EDB /* GigraffyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GigraffyUITests.swift; sourceTree = "<group>"; };
 		A19DA8C52555EDE7003D9EDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A19DA8D12555EF10003D9EDB /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
-		A19DA8D3255A5A65003D9EDB /* ChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
+		A19DA8D3255A5A65003D9EDB /* ChartDataPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartDataPoint.swift; sourceTree = "<group>"; };
+		A19DA8D5255B0F50003D9EDB /* ChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +107,8 @@
 				A19DA8AA2555EDE6003D9EDB /* Assets.xcassets */,
 				A19DA8AF2555EDE6003D9EDB /* Info.plist */,
 				A19DA8AC2555EDE6003D9EDB /* Preview Content */,
-				A19DA8D3255A5A65003D9EDB /* ChartData.swift */,
+				A19DA8D3255A5A65003D9EDB /* ChartDataPoint.swift */,
+				A19DA8D5255B0F50003D9EDB /* ChartViewModel.swift */,
 			);
 			path = Gigraffy;
 			sourceTree = "<group>";
@@ -265,9 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A19DA8D6255B0F50003D9EDB /* ChartViewModel.swift in Sources */,
 				A19DA8A92555EDE4003D9EDB /* ContentView.swift in Sources */,
 				A19DA8A72555EDE4003D9EDB /* GigraffyApp.swift in Sources */,
-				A19DA8D4255A5A65003D9EDB /* ChartData.swift in Sources */,
+				A19DA8D4255A5A65003D9EDB /* ChartDataPoint.swift in Sources */,
 				A19DA8D22555EF10003D9EDB /* BarChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
